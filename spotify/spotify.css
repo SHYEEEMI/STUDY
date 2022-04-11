@@ -1,0 +1,234 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /*background color */
+   --main-bg: #fff;
+   --pink-bg: #ffcdd2;
+   --footer-icon-bg: #222326;
+   --header-bg: #000;
+
+   /* text color */
+   --white-text: #fff;
+   --sign-text: #d9dadc;
+   --link-hover: #1ed760;
+   --footer-title: #919496;
+   --main-text: #000;
+
+   /* Transition */
+   --tran-02: all 0.2s ease;
+   --tran-03: all 0.3s ease;
+   --tran-04: all 0.4s ease;
+   --tran-05: all 0.5s ease;
+} 
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+   
+}
+
+header{
+    height: 80px;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerbox{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+.logo img{
+    width: 150px;
+}   
+.nav{
+    cursor: pointer;
+    color: var(--main-bg);
+} 
+.nav ul{
+    display: flex;
+}
+.nav li{
+    padding-right: 45px;
+    font-family: 'GmarketSansLight';
+    font-weight: 600;
+    position: relative;
+}
+.nav li:hover{
+    color:var(--link-hover);
+}
+.nav li:nth-child(3)::after{
+    content: "";
+    background-color:var(--main-bg);
+    width: 1px;
+    height: 20px; 
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.content{
+    background-color: var(--pink-bg);
+    height: 553px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content .con{
+    width: 60%;    
+}
+.content .con h1{
+    font-family: 'GmarketSansMedium';
+    font-size: 3.7em;
+}
+.content .con h2{
+    font-family: 'GmarketSansLight';
+    padding: 30px;
+    font-size: 1.4em;
+}
+.content .app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.content .google img{
+    width: 155px;
+    height: 60px;
+}
+.content .join{
+    font-family: 'GmarketSansLight';
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+.content .join a{
+    color: var(--header-bg);
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--header-bg);
+    height: 532px;
+    display: flex;
+    justify-content: center;
+    font-family: 'GmarketSansLight';
+}
+footer .foot{
+    color: var(--main-bg);
+    width: 60%;
+}
+footer .logo2{
+    padding-right: 20px;
+}
+footer .logo2 img{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+footer .foot1{
+    display: flex;
+    padding: 90px 0;
+}
+footer .foot1 ul{
+    width: 210px;  
+}
+footer .foot1 li{
+    padding-bottom: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+footer .foot1 li:hover{
+    color: var(--link-hover);
+    font-weight: bold;
+}
+footer .foot1 li:nth-child(1){
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:var(--footer-title);
+    font-weight: 600;
+}
+footer .foot1 .info {
+    display: flex;
+    padding: 20px 30px;
+}
+footer .foot1 .icon{
+    display: flex;
+    margin-top: 20px;
+}
+footer .foot1 .icon1,.icon2,.icon3{
+    width: 54px;
+    height: 54px;
+    background-color: var(--footer-icon-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+footer .foot1 .icon img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;    
+}
+footer .foot2{
+    color: var(--footer-title);
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 100px;
+}
+footer .foot2 li:hover{
+    color: var(--link-hover);
+}
+footer .foot2 .fo{
+    display: flex;
+    padding-top: 35px;
+}
+footer .foot2 .fo li{
+    padding-right: 30px;
+}
+footer .foot2 .ko{
+    float: right;
+    margin-top: -40px;
+}
+footer .foot2 .ko li{
+    margin-bottom: 5px;
+}
+footer .foot2 .ko img{
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+  
+
